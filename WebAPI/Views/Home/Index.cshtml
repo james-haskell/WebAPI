@@ -1,0 +1,16 @@
+﻿@model WebAPI.Models.Employee
+@{
+    ViewBag.Title = "Index";
+}
+@using (Html.BeginForm("EmployeInfo", "Home"))
+{
+    @Html.Label("Employee Name: ");
+    @Html.TextBoxFor(m => m.name)<br />
+    @Html.Label("Employee Age: ");
+    @Html.TextBoxFor(m => m.age)<br />
+    @Html.Label("Employee Address: ");
+    @Html.TextBoxFor(m => m.address)<br />
+    @Html.Label("Employee Contact: ");
+    @Html.TextBoxFor(m => m.contact)<br />
+    <input type="submit" value="Send" />
+}
